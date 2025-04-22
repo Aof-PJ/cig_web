@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+    <script src="./func/domain.js"></script>
+    <script src="./func/q-set3.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="./image/medPSU.png" width="106" height="150">
+                <img src="./image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div class="blockQ">
+                <label><h3><u>ส่วนที่ 1.</u> ข้อมูลทั่วไป</h3></label>
+                <form class="headQ">
+                    <B>อายุ</B> <input type="number" id="age" min="1" max="120" onkeyup="if(value != ''){if(value<1) value=1; else if(value>120) value=120;}"> ปี <br>
+                    <B>เพศ</B>  <input type="radio" name="gender" value="ชาย">ชาย 
+                            <input type="radio" name="gender" value="หญิง">หญิง 
+                </form>
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>ภูมิภาคที่คุณอาศัย</B><br>
+                    <input type="radio" name="region" value="ภาคเหนือ"> ภาคเหนือ<br>
+                    <input type="radio" name="region" value="ภาคตะวันออกเฉียงเหนือ"> ภาคตะวันออกเฉียงเหนือ<br>
+                    <input type="radio" name="region" value="ภาคกลาง"> ภาคกลาง<br>
+                    <input type="radio" name="region" value="ภาคตะวันตก"> ภาคตะวันตก<br>
+                    <input type="radio" name="region" value="ภาคใต้"> ภาคใต้<br>
+                </form>
+
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>ศาสนา</B><br>
+                    <input type="radio" name="religion" value="พุทธ"> พุทธ<br>
+                    <input type="radio" name="religion" value="คริสต์"> คริสต์<br>
+                    <input type="radio" name="religion" value="อิสลาม"> อิสลาม<br>
+                    <input type="radio" name="religion" value="other"> อื่น ๆ โปรดระบุ : 
+                        <input id="other_religion" disabled>
+                </form>
+
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>สถานภาพ</B><br>
+                    <input type="radio" name="status" value="โสด"> โสด<br>
+                    <input type="radio" name="status" value="สมรส"> สมรส<br>
+                    <input type="radio" name="status" value="หย่า"> หย่า<br>
+                    <input type="radio" name="status" value="other"> อื่น ๆ โปรดระบุ : 
+                        <input id="other_status" disabled>
+                </form>
+
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>ระดับการศึกษาสูงสุด</B><br>
+                    <input type="radio" name="education" value="ไม่ได้เรียนหนังสือ"> ไม่ได้เรียนหนังสือ<br>
+                    <input type="radio" name="education" value="ประถมศึกษา"> ประถมศึกษา<br>
+                    <input type="radio" name="education" value="มัธยมต้น"> มัธยมต้น<br>
+                    <input type="radio" name="education" value="มัธยมปลาย"> มัธยมปลาย<br>
+                    <input type="radio" name="education" value="ประกาศนียบัตรวิชาชีพ (ปวช.)"> ประกาศนียบัตรวิชาชีพ (ปวช.)<br>
+                    <input type="radio" name="education" value="อนุปริญญา"> อนุปริญญา<br>
+                    <input type="radio" name="education" value="ประกาศนียบัตรวิชาชีพขั้นสูง"> ประกาศนียบัตรวิชาชีพขั้นสูง (ปวส.)<br>
+                    <input type="radio" name="education" value="ปริญญาตรี"> ปริญญาตรี<br>
+                    <input type="radio" name="education" value="สูงกว่าปริญญาตรี"> สูงกว่าปริญญาตรี<br>
+                    <input type="radio" name="education" value="other"> อื่น ๆ โปรดระบุ : 
+                        <input id="other_education" disabled>
+                </form>
+
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>คุณเป็นนักศึกษาคณะวิทยาศาสตร์สุขภาพหรือไม่ (เช่น แพทย์ เภสัช ทันตะ พยาบาล เทคนิคการแพทย์ และอื่นๆ)</B><br>
+                    <input type="radio" name="isHealth">ใช่ <br>
+                    <input type="radio" name="isHealth" value="0">ไม่ใช่ <br>
+                    <div id="isHealth" hidden>
+                        <B>คณะวิทยาศาสตร์สุขภาพที่คุณศึกษาอยู่ คือ</B><br>
+                        <input type="radio" name="other_health" value="แพทยศาสตร์">แพทยศาสตร์ <br>
+                        <input type="radio" name="other_health" value="เภสัชศาสตร์">เภสัชศาสตร์ <br>
+                        <input type="radio" name="other_health" value="ทันตแพทย์">ทันตแพทย์ <br>
+                        <input type="radio" name="other_health" value="พยาบาล">พยาบาล <br>
+                        <input type="radio" name="other_health" value="เทคนิคการแพทย์">เทคนิคการแพทย์ <br>
+                        <input type="radio" name="other_health" value="other">อื่น ๆ โปรดระบุ : 
+                            <input id="other_health" disabled> <br>
+                        <B>ชั้นปีที่คุณกำลังศึกษาอยู่ </B><br>โปรดระบุ : <input type="number" id="classes" max="6" min="1" onkeyup="if(value != ''){if(value<1) value=1; else if(value>6) value=6;}">
+                    </div>
+                </form>
+
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>อาชีพ</B><br>
+                    <input type="radio" name="career" value="ข้าราชการ / พนักงานของรัฐ"> ข้าราชการ / พนักงานของรัฐ<br>
+                    <input type="radio" name="career" value="พนักงานจ้างของเอกชน"> พนักงานจ้างของเอกชน<br>
+                    <input type="radio" name="career" value="ค้าขาย"> ค้าขาย<br>
+                    <input type="radio" name="career" value="ธุรกิจส่วนตัว"> ธุรกิจส่วนตัว<br>
+                    <input type="radio" name="career" value="รับจ้างทั่วไป"> รับจ้างทั่วไป<br>
+                    <input type="radio" name="career" value="พนักงานเกษียณ"> พนักงานเกษียณ<br>
+                    <input type="radio" name="career" value="เกษตรกรรม"> เกษตรกรรม<br>
+                    <input type="radio" name="career" value="วิชาชีพอิสระ (เช่น แพทย์ ทนายความ สถาปนิก)"> วิชาชีพอิสระ (เช่น แพทย์ ทนายความ สถาปนิก)<br>
+                    <input type="radio" name="career" value="นักเรียน นักศึกษา"> นักเรียน นักศึกษา<br>
+                    <input type="radio" name="career" value="ไม่ได้ประกอบอาชีพ / ว่างงาน"> ไม่ได้ประกอบอาชีพ / ว่างงาน<br>
+                </form>
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>รายได้ต่อเดือน</B><br>
+                    <input type="radio" name="income" value="ไม่เกิน 5,000 บาท"> ไม่เกิน 5,000 บาท<br>
+                    <input type="radio" name="income" value="5,001 ถึง 10,000 บาท"> 5,001 ถึง 10,000 บาท<br>
+                    <input type="radio" name="income" value="10,001 ถึง 20,000 บาท"> 10,001 ถึง 20,000 บาท<br>
+                    <input type="radio" name="income" value="20,001 ถึง 30,000 บาท"> 20,001 ถึง 30,000 บาท<br>
+                    <input type="radio" name="income" value="30,001 ถึง 40,000 บาท"> 30,001 ถึง 40,000 บาท<br>
+                    <input type="radio" name="income" value="40,001 ถึง 50,000 บาท"> 40,001 ถึง 50,000 บาท<br>
+                    <input type="radio" name="income" value="สูงกว่า 50,000 บาท"> สูงกว่า 50,000 บาท<br>
+                    <input type="radio" name="income" value="ไม่มั่นใจ"> ไม่มั่นใจ<br>
+                </form>
+                <form class="headQ" style="margin-top: 3%;">
+                    <B>โรคประจำตัว</B><br>
+                    <input type="radio" name="disease" value="ไม่มีโรค"> ไม่มีโรค<br>
+                    <input type="radio" name="disease" value="เบาหวาน"> เบาหวาน<br>
+                    <input type="radio" name="disease" value="ความดันโลหิตสูง"> ความดันโลหิตสูง<br>
+                    <input type="radio" name="disease" value="หลอดเลือดในสมอง"> หลอดเลือดในสมอง<br>
+                    <input type="radio" name="disease" value="หลอดเลือดหัวใจ"> หลอดเลือดหัวใจ<br>
+                    <input type="radio" name="disease" value="หลอดลมอุดกั้นเรื้อรัง"> หลอดลมอุดกั้นเรื้อรัง<br>
+                    <input type="radio" name="disease" value="หลอดลมอุดกั้นเรื้อรัง"> หลอดลมอุดกั้นเรื้อรัง<br>
+                    <input type="radio" name="disease" value="other"> อื่น ๆ โปรดระบุ : 
+                        <input id="other_disease" disabled>
+                </form>
+            </div>
+            <button class="buttonQ" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน<br>
+             คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+             ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+    <script>
+        var religions = document.getElementsByName('religion')
+        for(religion of religions){
+            religion.addEventListener('change', checkReligion);
+        }
+        function checkReligion() {
+            let choice = document.getElementsByName('religion')[3];
+            let other = document.getElementById('other_religion')
+            if(choice.checked){
+                other.disabled = false;
+            }else{
+                other.disabled = true;
+                other.value = "";
+            }
+        }
+
+        var statuses = document.getElementsByName('status')
+        for(St of statuses){
+            St.addEventListener('change', checkStatus);
+        }
+        function checkStatus() {
+            let choice = document.getElementsByName('status')[3];
+            let other = document.getElementById('other_status')
+            if(choice.checked){
+                other.disabled = false;
+            }else{
+                other.disabled = true;
+                other.value = "";
+            }
+        }
+
+        var educations = document.getElementsByName('education')
+        for(education of educations){
+            education.addEventListener('change', checkEducation);
+        }
+        function checkEducation() {
+            let choice = document.getElementsByName('education')[9];
+            let other = document.getElementById('other_education')
+            if(choice.checked){
+                other.disabled = false;
+            }else{
+                other.disabled = true;
+                other.value = "";
+            }
+        }
+
+        var isHealths = document.getElementsByName('isHealth')
+        for(isHealth of isHealths){
+            isHealth.addEventListener('change', checkisHealth);
+        }
+        function checkisHealth() {
+            let choice = document.getElementsByName('isHealth')[0];
+            let other = document.getElementById('isHealth')
+            if(choice.checked){
+                other.hidden = false;
+            }else{
+                other.hidden = true;
+                other.value = "";
+            }
+        }
+        var other_healths = document.getElementsByName('other_health')
+        for(other_health of other_healths){
+            other_health.addEventListener('change', checkother_health);
+        }
+        function checkother_health() {
+            let choice = document.getElementsByName('other_health')[5];
+            let other = document.getElementById('other_health')
+            if(choice.checked){
+                other.disabled = false;
+            }else{
+                other.disabled = true;
+                other.value = "";
+            }
+        }
+
+        var diseases = document.getElementsByName('disease')
+        for(disease of diseases){
+            disease.addEventListener('change', checkDisease);
+        }
+        function checkDisease() {
+            let choice = document.getElementsByName('disease')[7];
+            let other = document.getElementById('other_disease')
+            if(choice.checked){
+                other.disabled = false;
+            }else{
+                other.disabled = true;
+                other.value = "";
+            }
+        }
+    </script>
+</body>

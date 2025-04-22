@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="../func/domain.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="../image/medPSU.png" width="106" height="150">
+                <img src="../image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div class="blockQ">
+                <label><h3><u>ส่วนที่ 3.</u> แบบประเมินการติดสารนิโคตินในบุหรี่ไฟฟ้า<br><br>
+                โดยปกติ คุณใช้บุหรี่ไฟฟ้าวันละกี่ครั้ง (1 ครั้ง เทียบเท่า 15 สูบหรือพัฟ (puff) หรือ 10 นาที)</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q1" value="0">0-4 ครั้ง/วัน<br>
+                    <input type="radio" name="q1" value="1">5-9 ครั้ง/วัน<br>
+                    <input type="radio" name="q1" value="2">10-14 ครั้ง/วัน<br>
+                    <input type="radio" name="q1" value="3">15-19 ครั้ง/วัน <br>
+                    <input type="radio" name="q1" value="4">20-29 ครั้ง/วัน <br>
+                    <input type="radio" name="q1" value="5">มากกว่า 29 ครั้ง/วัน <br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>ในวันที่คุณสามารถใช้บุหรี่ไฟฟ้าได้อย่างอิสระ คุณจะเริ่มใช้บุหรี่ไฟฟ้าครั้งแรกหลังจากตื่นนอนกี่นาที</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q2" value="5">0-5 นาที<br>
+                    <input type="radio" name="q2" value="4">6-15 นาที<br>
+                    <input type="radio" name="q2" value="3">16-30 นาที<br>
+                    <input type="radio" name="q2" value="2">31-60 นาที <br>
+                    <input type="radio" name="q2" value="1">61-120 นาที <br>
+                    <input type="radio" name="q2" value="0">มากกว่า 120 นาที <br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>คุณเคยต้องตื่นนอนในตอนกลางคืน เพื่อมาใช้บุหรี่ไฟฟ้า ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q3" value="1">ใช่<br>
+                    <input type="radio" name="q3" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ" id="Q4" hidden>
+                <label><h3>ถ้าตอบ ใช่ โดยทั่วไปคุณต้องตื่นนอนในตอนกลางคืน เพื่อมาใช้บุหรี่ไฟฟ้ากี่คืนต่อสัปดาห์</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q4" value="0">0-1 คืน <br>
+                    <input type="radio" name="q4" value="1">2-3 คืน <br>
+                    <input type="radio" name="q4" value="2">มากกว่า 3 คืน <br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>ในปัจจุบันที่คุณยังใช้บุหรี่ไฟฟ้าอยู่ เพราะการเลิกใช้นั้นทำได้ยาก ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q5" value="1">ใช่<br>
+                    <input type="radio" name="q5" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>คุณเคยมีความรู้สึกอยากใช้บุหรี่ไฟฟ้าอย่างมาก ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q6" value="1">ใช่<br>
+                    <input type="radio" name="q6" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>ใน 1 สัปดาห์ที่ผ่านมา คุณมีความต้องการใช้บุหรี่ไฟฟ้ามากน้อยเพียงใด</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q7" value="0">ไม่มี<br>
+                    <input type="radio" name="q7" value="0">มีเล็กน้อย<br>
+                    <input type="radio" name="q7" value="1">มีปานกลาง<br>
+                    <input type="radio" name="q7" value="1">มีมาก<br>
+                    <input type="radio" name="q7" value="2">มีมากอย่างยิ่ง<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>การไม่ใช้บุหรี่ไฟฟ้า ในสถานที่ที่ไม่ควรใช้ เป็นเรื่องยากสำหรับคุณ ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q8" value="1">ใช่<br>
+                    <input type="radio" name="q8" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>เมื่อคุณไม่ได้ใช้บุหรี่ไฟฟ้ามาเป็นระยะหนึ่งแล้ว หรือ เมื่อคุณพยายามหยุดใช้บุหรี่ไฟฟ้า คุณจะรู้สึกหงุดหงิดมากขึ้น เพราะคุณไม่สามารถใช้บุหรี่ไฟฟ้าได้ ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q9" value="1">ใช่<br>
+                    <input type="radio" name="q9" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>เมื่อคุณไม่ได้ใช้บุหรี่ไฟฟ้ามาเป็นระยะหนึ่งแล้ว หรือ เมื่อคุณพยายามหยุดใช้บุหรี่ไฟฟ้า คุณจะรู้สึกประหม่า กระสับกระส่าย หรือวิตกกังวล เพราะคุณไม่สามารถใช้บุหรี่ไฟฟ้าได้ ใช่หรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q10" value="1">ใช่<br>
+                    <input type="radio" name="q10" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <!-- -------------------- -->
+            <button class="buttonQ" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน <br>
+            คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+            ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+    <script src="./cigTypefunc/penn.js"></script>
+    <script>
+        var q3 = document.getElementsByName("q3");
+        for(ans of q3){
+            ans.addEventListener('change', checkQ3);
+        }
+        function checkQ3(){
+            choice = document.getElementsByName("q3")[0]
+            if(choice.checked){
+                document.getElementById("Q4").hidden = false;
+            }else{
+                document.getElementById("Q4").hidden = true;
+            }
+        }
+    </script>
+</body>

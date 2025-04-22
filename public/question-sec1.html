@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title> 
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="./func/domain.js"></script>
+    <script src="./func/q-set1.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="./image/medPSU.png" width="106" height="150">
+                <img src="./image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div><h4><B>คำชี้แจง :</B> กรุณาเลือกคำตอบ ที่ตรงกับความเป็นจริงของคุณ</h4></div>
+            <div class="blockQ">
+                <label><h4>ในช่วง 3 เดือนที่ผ่านมาคุณสูบบุหรี่ไฟฟ้าหรือไม่</h4></label>
+                <div id="alert"></div>
+                <form class="headQ">
+                    <input type="radio" name="cig_3m" value="1"> ใช่ <br>
+                    <input type="radio" name="cig_3m" value="0"> ไม่ใช่
+                </form>
+            </div>
+            <!-- -------------------- -->
+            <button id="button" class="buttonQ" type="submit" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน <br>
+            คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+            ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+</body>

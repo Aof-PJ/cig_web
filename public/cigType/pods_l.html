@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="../func/domain.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="../image/medPSU.png" width="106" height="150">
+                <img src="../image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div class="blockQ">
+                <label><h3>คุณใช้น้ำยาบุหรี่ไฟฟ้ายี่ห้อใดบ่อยที่สุดในช่วง 3 เดือนที่ผ่านมา</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="Pods_B" title="10000" value="3, 2.1">KS Kurve<br>
+                    <img src="./imgCigType/liquid/pods/ks.png" width="400px"><br>
+                    <input type="radio" name="Pods_B" title="01000" value="3, 2">INFY<br>
+                    <img src="./imgCigType/liquid/pods/infy.png" width="350px"><br>
+                    <input type="radio" name="Pods_B" title="00100" value="3, 1.9">RELX<br>
+                    <img src="./imgCigType/liquid/pods/relx.png" width="400px"><br>
+                    <input type="radio" name="Pods_B" title="00010" value="3, 2">ไม่ทราบ<br>
+                    <input type="radio" name="Pods_B" title="00001" value="อื่นๆ">อื่นๆ : โปรดระบุ <input type="text" id="otherPods" disabled><br> 
+                </div>
+                <div style="margin-left: 1%;" id="otherQ" hidden>
+                    <div class="headQgen">
+                        <label><b>ปริมาตรของน้ำยาบุหรี่ไฟฟ้าที่คุณใช้ (1 ขวด) </b></label><br>
+                        &emsp;โปรดระบุ : <input id="puff" type="number" style="width: 35px;"> ml <br>
+                    </div>
+                    <div class="headQgen">
+                        <label><b>ความเข้มข้นของปริมาณนิโคตินในน้ำยาบุหรี่ไฟฟ้าที่คุณใช้ </b></label><br>
+                        &emsp;โปรดระบุ : <input id="nicotine" type="number" style="width: 35px;"> % <br>
+                        **หมายเหตุ : หากหน่วยเป็น mg กรุณานำค่าตัวเลขนั้นหารด้วย 10 ก่อนกรอกคำตอบ เช่น 30 mg ให้ตอบเป็น 3%
+                    </div>
+                </div>
+                <label><h3>คุณใช้หัวน้ำยาบุหรี่ไฟฟ้าจนหมดและเปลี่ยนเป็นภายในระยะเวลาเท่าใด</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="Pods_f" value="7">ภายในระยะเวลา 1 สัปดาห์<br>
+                    <input type="radio" name="Pods_f" value="30">ภายในระยะเวลา 1 เดือน<br>
+                    <input type="radio" name="Pods_f" value="0">ภายในระยะเวลามากกว่า 1 เดือน<br>
+                    <B>ในระยะเวลาดังกล่าว คุณมีการเปลี่ยนบุหรี่ไฟฟ้าไปจำนวนกี่หัว : </B><br><input type="number" id="freq" min="0"> หัว
+                </div>
+            </div>
+            <!-- -------------------- -->
+            <button class="buttonQ" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน <br>
+            คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+            ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+    <script src="./cigTypefunc/pods_l.js"></script>
+    <script>
+        var otherPods = document.getElementsByName('Pods_B');
+        for(otherPod of otherPods){
+            otherPod.addEventListener('change', choosePods);
+        }
+
+        function choosePods(e){
+            // console.log(this.value.split(", "))
+            if(this.value == "อื่นๆ"){
+                document.getElementById("otherQ").hidden = false
+                document.getElementById("otherPods").disabled = false
+            }else{
+                document.getElementById("otherQ").hidden = true
+                document.getElementById("otherPods").disabled = true
+                document.getElementById("otherPods").value = ""
+            }
+        }
+    </script>
+</body>

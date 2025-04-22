@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="./func/domain.js"></script>
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="./image/medPSU.png" width="106" height="150">
+                <img src="./image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div class="blockQ">
+                <label><h3>ความเข้มข้นของปริมาณนิโคตินน้ำยาที่ท่านใช้เป็นประจำ</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="nicotine" value="1.8">1.8% Nicotine (18mg/ml)<br>
+                    <input type="radio" name="nicotine" value="2">2% Nicotine (20mg/ml)<br>
+                    <input type="radio" name="nicotine" value="3">3% Nicotine (30mg/ml)<br>
+                    <input type="radio" name="nicotine" value="5">5% Nicotine (50mg/ml)<br>
+                    <input type="radio" name="nicotine" value="other">อื่นๆ โปรดระบุ 
+                        <input type="number" min="0" max="100" id="other1" style="width: 40px;" disabled> %
+                </div>
+            </div>
+            
+            <div class="blockQ" id="cartridgeQ">
+                <label><h3>ท่านได้ทำการปรับเปลี่ยนหรือดัดแปลงหัวน้ำยาของบุหรี่ไฟฟ้าที่ท่านใช้อยู่เป็นประจำหรือไม่</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="cartridge" value="2">ไม่ใช่<br>
+                    <input type="radio" name="cartridge" value="other">อื่นๆ โปรดระบุ 
+                        <input type="number" min="0" max="999" id="other2" style="width: 40px;" disabled> ml<br>
+                </div>
+            </div>
+            <div class="blockQ" id="puffQ"><!--style="display:none"-->
+                <label><h3>จำนวน puff ของบุหรี่ไฟฟ้าชนิดใช้แล้วทิ้งที่ท่านใช้ประจำ</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="puff" value="600">600 puff<br>
+                    <input type="radio" name="puff" value="1000">1000 puff<br>
+                    <input type="radio" name="puff" value="2000">2000 puff<br>
+                    <input type="radio" name="puff" value="3000">3000 puff<br>
+                    <input type="radio" name="puff" value="5000">5000 puff<br>
+                    <input type="radio" name="puff" value="other">อื่นๆ โปรดระบุ 
+                        <input type="number" min="0" max="999" id="other3" style="width: 40px;" disabled> ml<br>
+                </div>
+            </div>
+
+            <!-- -------------------- -->
+            <button class="buttonQ" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน <br>
+            คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+            ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+    <script src="./func/q-set5.1.js"></script>
+</body>

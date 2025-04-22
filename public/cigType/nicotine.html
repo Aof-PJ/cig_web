@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bai+Jamjuree:wght@300;400&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>แบบสอบถามเรื่องปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้าในภาคใต้ตอนล่างของประเทศไทย</title>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.all.min.js"></script>
+    <link href="https://cdn.jsdelivr.net/npm/sweetalert2@11.7.3/dist/sweetalert2.min.css" rel="stylesheet">
+    <script src="../func/domain.js"></script>
+    <link rel="stylesheet" href="../style.css">
+</head>
+<body>
+    <div class="bg">
+        <div class="headBar">
+            <div style="display: flex; justify-content: center;">
+                <img src="../image/medPSU.png" width="106" height="150">
+                <img src="../image/trc.png" width="158.5" height="120">
+            </div>
+            <h2>แบบสอบถาม<br></h2> 
+                <h3>ปัจจัยที่เอื้อต่อการเลือกซื้อและใช้บุหรี่ไฟฟ้า <br>
+                ในภาคใต้ตอนล่างของประเทศไทย </h3>
+        </div>
+        <div style="margin: 3%; position: relative;">
+            <div class="blockQ">
+                <label><h3><u>ส่วนที่ 3.</u> แบบประเมินการติดสารนิโคตินในบุหรี่ไฟฟ้า<br><br>
+                    คุณรู้สึกลำบากหรือยุ่งยากไหมที่ต้องอยู่ใน “เขตปลอดบุหรี่” เช่น โรงภาพยนตร์ รถโดยสาร ร้านอาหาร</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q1" value="1">รู้สึกลำบาก<br>
+                    <input type="radio" name="q1" value="0">ไม่รู้สึกลำบาก<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>การใช้บุหรี่ไฟฟ้าช่วงไหนที่คุณไม่อยากเลิกมากที่สุด</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q2" value="1">ในตอนเช้า<br>
+                    <input type="radio" name="q2" value="0">ระหว่างหรือหลังรับประทานอาหาร<br>
+                    <input type="radio" name="q2" value="0">ระหว่างหรือหลังจากอยู่ในสถานการณ์เครียด<br>
+                    <input type="radio" name="q2" value="0">ช่วงอื่น ๆ <br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>คุณใช้บุหรี่ไฟฟ้าจัดใน 2 ชั่วโมงแรกหลังตื่นนอน(ใช้มากกว่าในช่วงเวลาอื่นของวัน)</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q3" value="1">ใช่<br>
+                    <input type="radio" name="q3" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <div class="blockQ">
+                <label><h3>คุณยังต้องใช้บุหรี่ไฟฟ้าแม้จะเจ็บป่วย ต้องนอนพักตลอดในโรงพยาบาล</h3></label>
+                <div class="headQgen">
+                    <input type="radio" name="q4" value="1">ใช่<br>
+                    <input type="radio" name="q4" value="0">ไม่ใช่<br>
+                </div>
+            </div>
+            <!-- -------------------- -->
+            <button class="buttonQ" onclick="ButtonNextQ()" width="100px">ถัดไป</button>
+        </div>
+        <div class="credit">
+            โครงการสำรวจสถานการณ์การลักลอบนำเข้าและจัดจำหน่ายบุหรี่ไฟฟ้าเพื่อพัฒนาแบบสอบถามปัจจัยที่เอื้อต่อการเลือกซื้อบุหรี่ไฟฟ้า<br>
+            โดยผ่านมุมมองผู้นำเข้า ผู้จำหน่ายและผู้สูบในภาคใต้ตอนล่างของประเทศไทย<br>
+            <br>
+            สาขาวิชาเวชศาสตร์ครอบครัวและเวชศาสตร์ป้องกัน <br>
+            คณะแพทยศาสตร์ มหาวิทยาลัยสงขลานครินทร์ <br>
+            ร่วมกับ ศูนย์วิจัยและจัดการความรู้เพื่อการควบคุมยาสูบ
+        </div>
+    </div>
+    <script src="./cigTypefunc/nicotine.js"></script>
+</body>
